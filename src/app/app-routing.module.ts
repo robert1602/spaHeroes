@@ -5,6 +5,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 
 
@@ -14,6 +15,7 @@ const APP_ROUTES: Routes = [
 {path:'home',  component: HomeComponent},
 {path:'navbar',component: NavbarComponent},
 {path:'heroe/:id', component: HeroeComponent},
+{path:'buscador/:termino', component: BuscadorComponent},
 
 {path:'**', pathMatch:'full', redirectTo:'home'}
 

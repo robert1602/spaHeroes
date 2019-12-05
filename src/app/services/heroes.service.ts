@@ -70,10 +70,23 @@ private heroes:Heroe[]=[
     return this.heroes[idx ];//en el ejemplo es un string
   }
 
-   buscarHeroes(termino:string){
-     let heroesArr:Heroe[]=[]
-     termino=termino.toLowerCase();
-   }
+  
+  buscarHeroes(termino:string):Heroe[]{
+
+    let heroesArr:Heroe[]=[]
+    termino=termino.toLowerCase();
+
+    for(let heroe of this.heroes){
+      
+      let nombre = heroe.nombre.toLowerCase();
+
+      if(nombre.indexOf(termino)>=0){
+        heroesArr.push(heroe)
+      }
+
+    }
+  return heroesArr;
+  }
   
 }
 

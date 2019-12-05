@@ -7,6 +7,10 @@ body {
     display: inline-block;
 }
 
+.img-logo {
+    width: 120px;
+}
+
 .main-container {
     margin-top: 20px;
 }
